@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>Блок исполнителя</h1>
+        <p>Привет! Это тестововый блок исполнителя.</p>
+        <button><a href="/">Вы заказчик</a></button>
+
+        <ul>
+            {% for obj in executor_list %}
+                <li>
+                    {{ obj.executor_name }}
+                    {{ obj.executor_phone }}
+                    {{ obj.executor_experience }}
+                </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>

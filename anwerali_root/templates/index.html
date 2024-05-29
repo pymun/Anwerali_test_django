@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>Блок заказчика</h1>
+        <p>Привет! Это тестововый блок заказчика.</p>
+        <button><a href="{% url 'executor_page' %}">Вы исполнитель</a></button>
+
+        <ul>
+            {% for obj in customer_list %}
+                <li>
+                    {{ obj.customer_name }}
+                    {{ obj.customer_phone }}
+                    {{ obj.customer_experience }}
+                </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
